@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <title>D3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="description" content="D3">
+    <base href=".">
+    <style>
+        svg {
+            border: solid 1px black;
+        }
+
+        .link {
+            fill: none;
+            stroke: #ccc;
+            stroke-width: 1.5px;
+        }
+        div.tooltipGraphDiv {
+            position: absolute;
+            text-align: center;
+            padding: 5px;
+            color: white;
+            background-color: black;
+            border: 0;
+            border-radius: 5px;
+            pointer-events: none;
+            z-index: 10000;
+        }
+    </style>
+</head>
+
+<body ng-app="app" ng-csp="no-unsafe-eval" ng-strict-di ng-cloak>
+    <div class="container content">
+        <div class="container-view" ng-view></div>
+    </div>
+    <app></app>
+</body>
+
+</html>
